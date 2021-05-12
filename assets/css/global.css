@@ -15,9 +15,15 @@ html {
 
 body {
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    background-color:#ccc;
+    background-color:var(--primary-color);
     font-size: 1.6rem;
     line-height: 1.5;
+}
+
+    /* FONTS */
+@font-face {
+  font-family: "SixCaps";
+  src: url("../fonts/SixCaps-Regular.ttf");
 }
 
 /*--- BASE ---*/
@@ -43,4 +49,5 @@ img{
 
     .page{
         overflow:hidden;
+        background-color: var(--primary-color);
     }

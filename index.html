@@ -24,13 +24,13 @@
             <nav class="page__nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="" class="nav__link">Principal</a>
+                        <a href="" class="nav__link slide-1">Principal</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link">Sobre mi</a>
+                        <a href="" class="nav__link slide-2">Sobre mi</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link">Contacto</a>
+                        <a href="" class="nav__link slide-3">Contacto</a>
                     </li>
                 </ul>
 
@@ -47,13 +47,41 @@
 
         </header>
 
-    </div>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide cover">
+                    <div class="cover__container">
+                        <video src="assets/media/video.webm" class="cover__video" autoPlay loop muted></video>
+                        <h1 class="fade-up cover__title">Andrii Pap</h1>
+                        <div class="cover__subtitle">
+                            <p class="fade-left">Developer Web </p>
+                            <p> | </p>
+                            <p class="fade-right">Desarrollador Web </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide about">
+                    about
+                </div>
+                <div class="swiper-slide footer">
+                    footer
+                </div>
+
+            </div>
+
+            <!-- Add Pagination -->
+
+            <div class="swiper-pagination"></div>
+
+        </div>
 
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
