@@ -13,9 +13,9 @@
 .page__nav{
   display: flex;
   justify-content: space-between;
-  line-height: 7rem;
+  line-height: 5rem;
   transform: translate(100%, 0);
-  transition: transform .5s .6s, background-color .5s .6s;
+  transition: transform .5s .5s, background-color .4s .5s;
 }
 
 .nav__list{
@@ -42,17 +42,33 @@
   transition: transform .5s linear;
 }
 
-.nav__link:hover{
-  color:rgb(250, 223, 189);
-  text-decoration: underline;
+.nav__item {
+  position: relative;
+  transition-delay: .4s;
+  visibility: hidden;
 }
 
-.nav__link.active{
-  display: block;
-  opacity: 1;
-
- 
+.nav__item::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--cremy);
+  left: 0;
+  bottom: 1rem;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .3s ease-in-out;
 }
+
+.nav__item:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.nav__item:hover .nav__link {
+  color:#f8d9b0;
+}
+
 
 .page__nav.active{
   background-color: var(--brown);
@@ -70,15 +86,15 @@
 }
 
 .nav__list.active .nav__item:nth-child(1) .nav__link {
-  transition-delay: .3s;
+  transition-delay: .2s;
 }
 
 .nav__list.active .nav__item:nth-child(2) .nav__link {
-  transition-delay: .4s;
+  transition-delay: .3s;
 }
 
 .nav__list.active .nav__item:nth-child(3) .nav__link {
-  transition-delay: .5s;
+  transition-delay: .4s;
 }
 
 
@@ -102,7 +118,7 @@
 /* Hamburger Menu */
 
 .nav__hamburger {
-  margin-top: 1%;
+  margin-top: .5%;
   position: absolute;
   right: 1%;
   top: 1%;
