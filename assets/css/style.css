@@ -106,7 +106,6 @@
 }
 
 /* FOOTER */
-/* FOOTER */
 
 .footer {
 	background-color: #110903;
@@ -119,16 +118,14 @@
 }
 
 .footer__info {
-	font-size: 35px;
 	padding: 30px 0 30px 50px;
-	width: 70%;
+  width: 70%;
 	margin: 0 auto;
-  margin-top: 10%;
 }
 
 .footer__info > h2 {
 	font-size: 8rem;
-	padding: 10% 0 15px 0;
+  padding: 10% 0 15px 0;
 }
 
 .footer__contact {
@@ -173,7 +170,7 @@
   transition: all 0.3s ease-out;
 }
 
-.footer__design-by small{
+.footer__design-by{
   font-size: 18px;
   padding-left: 50px;
   color: antiquewhite;
