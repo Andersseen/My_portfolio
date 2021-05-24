@@ -7,11 +7,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     <!-- MY CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/navigation.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/animations.css">
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -50,24 +55,55 @@
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide cover">
+                <section class="swiper-slide cover">
                     <div class="cover__container">
                         <video src="assets/media/video.webm" class="cover__video" autoPlay loop muted></video>
-                        <h1 class="fade-up cover__title">Andrii Pap</h1>
+                        <h2 class="scale_1 cover__title">¿Buscas alguien que sabe hacer una página web?</h2>
+                        <h3 class="scale_2 cover__title">¡Estás en el lugar correcto!</h3>
+                        <h4 class="fade-in-out cover__title-3">¡Me alegro verte!</h4>
                         <div class="cover__subtitle">
-                            <p class="fade-left">Developer Web </p>
-                            <p> | </p>
-                            <p class="fade-right">Desarrollador Web </p>
-
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide about">
-                    about
-                </div>
-                <div class="swiper-slide footer">
-                    footer
-                </div>
+                </section>
+                <section class="swiper-slide about" id="about">
+
+                    <div class="about__container">
+                        <div class="about__img">
+                            <img src="./assets/media/andrii.jpg" alt="photo-perfil">
+                        </div>
+
+                        <div class="about__block">
+                            <h2 class="about__subtitle">Andrii Pap</h2>
+                            <span class="about__profession">Desarrollador Web</span>
+                            <p class="about__text">Soy un apasionado de programacion y me motiva mucho
+                                desarrollar mis habilidades y crecer profesionalmente</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="swiper-slide footer" id="footer">
+                    <div class="footer__info fade-down">
+                        <h2>¡Gracias por tu visita!</h2>
+                        <h6>Basado en tu mundo</h6>
+                    </div>
+                    <div class="footer__contact fade-left">
+                        <h3 id="footer">Contacta conmigo</h3>
+                        <h6>Pongamonos manos a la obra </h6>
+                    </div>
+                    <div class="footer__sns fade-right">
+                        <div class="footer__design-by"><small>Diseñado por Andrii Pap</small></div>
+                        <div class="sns__links">
+                            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+                                <i class="fab fa-linkedin linkedin"></i>
+                            </a>
+                            <a href="https://githubs.com" target="_blank" rel="noreferrer">
+                                <i class="fab fa-github github"></i>
+                            </a>
+                            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+                                <i class="fab fa-facebook facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
 
             </div>
 

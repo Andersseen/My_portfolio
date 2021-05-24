@@ -17,7 +17,7 @@
   justify-content: space-between;
   line-height: 5rem;
   transform: translate(100%, 0);
-  transition: transform .5s .5s;
+  transition: transform .5s .5s linear , background-color .5s .5s linear;
 }
 
 .nav__list{
@@ -72,7 +72,7 @@
 .page__nav.active{
   background-color: var(--brown);
   transform: translate(0, 0);
-  transition: transform .5s, background-color .5s;
+  transition: transform .5s linear, background-color .5s linear;
   
 }
 .nav__list.active .nav__link {
