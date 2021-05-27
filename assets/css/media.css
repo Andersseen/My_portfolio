@@ -1,4 +1,13 @@
 /* MEDIA */
+
+@media only screen and (max-width: 1200px) {
+    /* COVER */
+    .cover__title {
+        font-size: 3rem;
+    }
+
+}
+
 @media only screen and (max-width: 1040px) {
     .footer__info > h2 {
         font-size: 7rem;
@@ -44,6 +53,15 @@
         font-size: 1rem;
     }
 
+    .cover__after-title > h1{
+        font-size: 15rem;
+        letter-spacing: 1px;
+    }
+
+    .after-title__text > p{
+        font-size: 2rem;
+    }
+
     /* ABOUT */
     .about__container{
         display: flex;
@@ -75,12 +93,6 @@
 }
 
 @media screen and (max-width: 520px) {
-    .cover__title {
-        font-size: 1.5rem;
-    }
-    .cover__title-3{
-        font-size: 1rem;
-    }
 
     /* FOOTER */
 

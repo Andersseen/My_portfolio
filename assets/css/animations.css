@@ -7,7 +7,12 @@
 @-webkit-keyframes fadeInUp {
   0% {
       opacity: 0;
-      transform: translateY(-200px)
+      transform: translateY(-500px);
+
+  }
+  90%{
+    opacity: 0;
+    transform: translateY(-200px);
   }
 
   100% {
@@ -19,7 +24,12 @@
 @keyframes fadeInUp {
   0% {
       opacity: 0;
-      transform: translateY(-200px)
+      transform: translateY(-500px);
+
+  }
+  90%{
+    opacity: 0;
+    transform: translateY(-200px);
   }
 
   100% {
@@ -200,7 +210,7 @@
 
 @-webkit-keyframes scale-zoom {
   0% {
-    opacity: 0;
+    opacity: 1;
     transform: scale(0);
   }
   50% {
@@ -208,7 +218,7 @@
     transform: scale(2);
   }
   100% {
-    opacity: 1; 
+    opacity: 0; 
     transform: scale(1);
   }
 }
@@ -216,7 +226,7 @@
 
 @keyframes scale-zoom {
   0% {
-    opacity: 0;
+    opacity: 1;
     transform: scale(0);
   }
   50% {
@@ -224,7 +234,7 @@
     transform: scale(2);
   }
   100% {
-    opacity: 1; 
+    opacity: 0; 
     transform: scale(1);
   }
 }
@@ -232,11 +242,11 @@
 
 @-webkit-keyframes scale-back {
   0% {
-    opacity: 0;
+    opacity: 1;
     transform: scale(5);
   }
   100% {
-    opacity: 1; 
+    opacity: 0; 
     transform: scale(1);
   }
 }
@@ -244,11 +254,11 @@
 
 @keyframes scale-back {
   0% {
-    opacity: 0;
+    opacity: 1;
     transform: scale(5);
   }
   100% {
-    opacity: 1; 
+    opacity: 0; 
     transform: scale(1);
   }
 }
@@ -307,14 +317,14 @@
 }
 
 
-.swiper-slide-active .fade-up {
+/* .swiper-slide-active .fade-up {
   -webkit-animation-name: fadeInUp;
           animation-name: fadeInUp;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   opacity: 1;
 
-}
+} */
 
 .swiper-slide-active .fade-right {
   -webkit-animation-name: fadeInRight;
@@ -364,25 +374,27 @@
 *scale
 */
 
-.swiper-slide-active .scale_1  {
-  -webkit-animation-name: scale-back;
-          animation-name: scale-back ;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  opacity: 1;
-}
-.swiper-slide-active .scale_2  {
-  -webkit-animation-name: scale ;
-          animation-name: scale ;
+.swiper-slide .scale_1  {
+  -webkit-animation-name: scale-zoom;
+          animation-name: scale-zoom ;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  opacity: 1;
+  opacity: 0;
 }
-.swiper-slide-active .fade-in-out  {
+.swiper-slide .scale_2  {
+  -webkit-animation-name: scale-zoom ;
+          animation-name: scale-zoom ;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  opacity: 0;
+}
+.swiper-slide .fade-in-out  {
   -webkit-animation-name: fade-in-out;
           animation-name: fade-in-out;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s
 }
