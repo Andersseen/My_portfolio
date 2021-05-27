@@ -60,7 +60,7 @@
   left: 0;
   bottom: 1rem;
   transform: scaleX(0);
-  transform-origin: right;
+  transform-origin: left;
   transition: transform .3s ease-in-out;
 }
 
@@ -195,8 +195,6 @@
     flex-direction: column;
   }
   .nav__link{
-    margin-left: 10%;
-    text-align: start;
     transform: translate(100%, 0);
     transition: transform .5s linear;
   }
@@ -210,5 +208,21 @@
   .nav__list.active .nav__link {
     transform: translate(0, 0);
   }
+
+
+  .nav__item::before {
+  content: '';
+  width: 100%;
+  height: 3px;
+  bottom: 1rem;
+
+  transform-origin: right;
+  transition: transform .3s ease-in-out;
+}
+
+.nav__item:hover::before {
+  transform: scaleX(1);
+  transform-origin: right;
+}
 
 }

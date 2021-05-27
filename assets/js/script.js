@@ -1,15 +1,25 @@
 // HAMBURGER
-const hamburger = document.querySelector('.nav__hamburger');
-const navbar = document.querySelector('.page__nav');
-const navlist = document.querySelector('.nav__list');
+const hamburger = document.querySelector('#toggle');
+const navbar = document.querySelector('#navbar');
+const navlist = document.querySelector('#nav-list');
+
+const wrapper = document.querySelector('.swiper-container');
 
 
-hamburger.addEventListener("click", () => {
+hamburger.onclick = () => {
+    toggleClass();
+}
+
+wrapper.onclick = () => {
+    toggleClass();
+}
+
+
+const toggleClass = () => {
     hamburger.classList.toggle('active');
     navbar.classList.toggle('active');
     navlist.classList.toggle('active');
-
-})
+}
 
 // SWIPER
 

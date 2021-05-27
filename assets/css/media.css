@@ -73,3 +73,26 @@
         padding: 0;
     }
 }
+
+@media screen and (max-width: 520px) {
+    .cover__title {
+        font-size: 1.5rem;
+    }
+    .cover__title-3{
+        font-size: 1rem;
+    }
+
+    /* FOOTER */
+
+    .footer__info {
+        padding: 0;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+
+    .footer__info > h2 {
+        font-size: 3rem;
+        padding: 0;
+    }
+}
