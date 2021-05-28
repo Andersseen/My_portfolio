@@ -74,23 +74,13 @@
   color: antiquewhite;
   font-size: 25rem;
   letter-spacing: 2px;
-  opacity: 0;
-}
-
-
-.swiper-slide .cover__after-title > h1 {
-  -webkit-animation-name: fadeInUp;
-          animation-name: fadeInUp;
-  -webkit-animation-duration: 9s;
-          animation-duration: 9s;
-
-  opacity: 1;
 }
 
 .after-title__text{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: -50px;
 }
 
 .after-title__text > p{
@@ -110,6 +100,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  width: 70%;
   height: 70%;
 }
 
@@ -135,8 +126,18 @@
 .about__subtitle{
   font-size: 7rem;
 }
-.about__profession{
-  font-size: 3rem;
+
+.about__text{
+  margin-top: 20px;
+  line-height: 1;
+}
+.typewriter{
+  margin: 0 auto;
+
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;  
+  opacity: 0;
 }
 
 /* FOOTER */
@@ -209,4 +210,3 @@
   padding-left: 50px;
   color: antiquewhite;
 }
-

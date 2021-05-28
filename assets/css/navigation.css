@@ -1,5 +1,6 @@
 :root {
   --brown: #110903;
+  --nav-brown : rgba(51, 28, 6, 0.603);
   --cremy: #faebd7;
   --brown-a: rgba(17, 9, 3, .5);
 }
@@ -71,7 +72,7 @@
 
 
 .page__nav.active{
-  background-color: var(--brown);
+  background-color: var(--nav-brown);
   transform: translate(0, 0);
   transition: transform .5s linear, background-color .5s linear;
   
@@ -200,7 +201,7 @@
   }
 
   .page__nav.active{
-    background-color: var(--brown-a);
+    background-color: var(--nav-brown);
     transform: translate(60%, 0);
     transition: transform .5s, background-color .5s;
   }
