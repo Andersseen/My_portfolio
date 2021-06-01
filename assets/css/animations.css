@@ -375,7 +375,7 @@ Normal animation
   }
   50% {
     opacity: .5;
-    transform: scale(2);
+    transform: scale(1.8);
   }
   100% {
     opacity: 0; 

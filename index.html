@@ -27,20 +27,26 @@
 <body>
     <div class="page">
         <header class="page__header">
+            <div class="header__language">
+                <ul>
+                    <li><button class="translate" id="lang__es">ES</button></li>
+                    <li><button class="translate" id="lang__ru">RU</button></li>
+                    <li><button class="translate" id="lang__en">EN</button></li>
+
+                </ul>
+            </div>
             <nav class="page__nav" id="navbar">
                 <ul class="nav__list" id="nav-list">
                     <li class="nav__item">
-                        <a href="" class="nav__link slide-1">Principal</a>
+                        <a href="" class="nav__link slide-1 lang" key="home"></a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link slide-2">Sobre mi</a>
+                        <a href="" class="nav__link slide-2 lang" key="about"></a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="nav__link slide-3">Contacto</a>
+                        <a href="" class="nav__link slide-3 lang" key="footer"></a>
                     </li>
                 </ul>
-
-
             </nav>
             <div class="nav__hamburger" id="toggle">
                 <div class="hamburger__wrapper">
@@ -59,9 +65,9 @@
                 <section class="swiper-slide cover">
                     <div class="cover__container">
                         <video src="assets/media/video.webm" class="cover__video" autoPlay loop muted></video>
-                        <h2 class="scale_1 cover__title">¿Necesitas una página web?</h2>
-                        <h3 class="scale_2 cover__title">¡Estás en el lugar correcto!</h3>
-                        <h4 class="fade-in-out cover__title-3">¡Me alegro verte!</h4>
+                        <h2 class="scale_1 cover__title lang" key="cover__title-1"></h2>
+                        <h3 class="scale_2 cover__title lang" key="cover__title-2"></h3>
+                        <h4 class="fade-in-out cover__title-3 lang" key="cover__title-3"></h4>
                         <div class="cover__after-title">
                             <h1 class="after-title">Andrii Pap</h1>
                             <div class="after-title__text">
@@ -81,14 +87,14 @@
 
                         <div class="about__block">
 
-                            <a href="" class="writer" data-period="2000"
-                                data-type='[ "Hola", "Soy Andrii", "Me gusta el diseño", "Adoro desarrollar" ]'>
+                            <a href="#" class="writer" data-period="2000"
+                                data-type='[ "Hola", "Hello", "Aloha", "Hallo", "Bonjour", "Привет" ]'>
                             </a>
                             <div class="about__text">
-                                <p class=" typewriter anim-typewriter_1">Soy un apasionado de programacion.</p><br>
-                                <p class=" typewriter anim-typewriter_2">Me motiva mucho desarrollar mis
-                                    ideas.</p><br>
-                                <p class="typewriter anim-typewriter_3">Crecer siempre profesionalmente.</p>
+                                <p class=" typewriter anim-typewriter_1 lang" key="about__text-1"></p>
+                                <br>
+                                <p class=" typewriter anim-typewriter_2 lang" key="about__text-2">.</p><br>
+                                <p class="typewriter anim-typewriter_3 lang" key="about__text-3"></p>
                             </div>
 
                         </div>
@@ -96,16 +102,16 @@
                 </section>
                 <section class="swiper-slide footer" id="footer">
                     <div class="footer__info fade-down">
-                        <h2>¡Gracias por tu visita!</h2>
+                        <h2 class="lang" key="footer__title"></h2>
                     </div>
                     <div class="footer__contact fade-left">
-                        <h3 id="footer">Contacta conmigo</h3>
-                        <h5>Pongamonos manos a la obra </h5>
+                        <h3 class="lang" key="footer__contact"></h3>
+                        <h5 class="lang" key="footer__subtitle"></h5>
                     </div>
                     <div class="footer__sns fade-right">
                         <div class="footer__design-by">
-                            <small>Diseñado por Andrii Pap</small>
-                            <h4>Basado en tu mundo</h4>
+                            <small class="lang" key="footer__design"></small>
+                            <h4 class="lang" key="footer__state"></h4>
                         </div>
                         <div class="sns__links">
                             <a href="https://linkedin.com" target="_blank" rel="noreferrer">
@@ -136,6 +142,7 @@
         <!-- MY SCRIPT -->
         <script src="./assets/js/script.js"></script>
         <script src="./assets/js/text.js"></script>
+        <script src="./assets/js/languages.js"></script>
 </body>
 
 </html>
