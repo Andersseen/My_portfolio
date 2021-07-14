@@ -97,19 +97,22 @@
 .nav__list.active .nav__item:nth-child(3) .nav__link {
   transition-delay: .5s;
 }
+.nav__list.active .nav__item:nth-child(4) .nav__link {
+  transition-delay: .6s;
+}
 
 
 /* reverse animation */
 
-.nav__list .nav__item:nth-child(1) .nav__link {
+
+.nav__list .nav__item:nth-child(2) .nav__link {
   transition-delay: .1s;
 }
 
-.nav__list .nav__item:nth-child(2) .nav__link {
+.nav__list .nav__item:nth-child(3) .nav__link {
   transition-delay: .2s;
 }
-
-.nav__list .nav__item:nth-child(3) .nav__link {
+.nav__list .nav__item:nth-child(4) .nav__link {
   transition-delay: .3s;
 }
 

@@ -2,6 +2,7 @@ const arrLang = {
     'en': {
         'home': 'Home',
         'about': 'About me',
+        'works': 'My jobs',
         'footer': 'Contact',
 
         'cover__title-1': 'Do you need a web page?',
@@ -12,6 +13,10 @@ const arrLang = {
         'about__text-2': 'It motivates me a lot to develop my ideas.',
         'about__text-3': 'Always grow professionally.',
 
+        'works__title': 'Home page',
+        'works__text': 'My first project in the internship.',
+        'works__btn': 'See',
+
         'footer__title': 'Thank you for your visit!',
         'footer__contact': 'Contact me',
         'footer__subtitle': 'Lets get to work',
@@ -21,6 +26,7 @@ const arrLang = {
     'ru': {
         'home': 'Главная',
         'about': 'Обо мне',
+        'works': 'Мои работы',
         'footer': 'Контакт',
 
         'cover__title-1': 'Тебе нужна веб-страница?',
@@ -31,6 +37,10 @@ const arrLang = {
         'about__text-2': 'Меня очень мотивирует развивать свои идеи.',
         'about__text-3': 'Всегда расти профессионально.',
 
+        'works__title': 'Home page',
+        'works__text': 'Мой первый проект в стажировке.',
+        'works__btn': 'Посмотри',
+
         'footer__title': 'Спасибо за визит!',
         'footer__contact': 'Свяжись со мной',
         'footer__subtitle': 'Давай приступим к работе',
@@ -40,6 +50,7 @@ const arrLang = {
     'es': {
         'home': 'Principal',
         'about': 'Sobre mi',
+        'works': 'Mis trabajos',
         'footer': 'Contacto',
 
         'cover__title-1': '¿Necesitas una página web?',
@@ -49,6 +60,10 @@ const arrLang = {
         'about__text-1': 'Soy un apasionado de programación.',
         'about__text-2': 'Me motiva mucho desarrollar mis ideas.',
         'about__text-3': 'Crecer siempre profesionalmente.',
+
+        'works__title': 'Home page',
+        'works__text': 'Mi primer proyecto en las prácticas.',
+        'works__btn': 'Mirar',
 
         'footer__title': '¡Gracias por tu visita!',
         'footer__contact': 'Contacta conmigo',

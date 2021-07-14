@@ -53,12 +53,13 @@
   
   background-color: transparent;
   color: var(--brown);
-  cursor: pointer;
+  
 
   transition: background-color .2s linear, transform .2s linear;
 }
 .header__language > ul > li:hover > button:not(.selected){
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .header__language > ul > li > button.selected{
@@ -180,6 +181,148 @@
   overflow: hidden;  
   opacity: 0;
 }
+
+/* WORKS */
+.works{
+  background-color: var(--primary-color);
+
+  display: flex;
+  flex-direction: column;
+}
+.works__container{
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+}
+.works__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work__item{
+  width: 30%;
+  border-radius: 20px;
+}
+/* IMAGE EFECT */
+
+.work__image{
+  width: 50%;
+
+  position: relative;
+  color: var(--secondary-color);
+  margin: 20px auto;
+}
+
+.work__image span{
+  position: absolute;
+
+  transition: all .5s ease ;
+}
+.work__image img{
+  border-radius: 10px;
+  opacity: .5;
+}
+
+.work__image .border-left{
+  height: 0;
+  width: 5px;
+  top: 0;
+  left: 0;
+
+  border-radius: 10px;
+  background: linear-gradient(to bottom right, var(--secondary-color) 50%,  transparent 60%);
+}
+.work__image .border-bottom{
+  height: 5px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+
+  border-radius: 10px;
+  background: linear-gradient(to top right, var(--secondary-color) 50%,  transparent 60%);
+}
+.work__image .border-right{
+  height: 0;
+  width: 5px;
+  bottom:0;
+  right:0;
+
+  border-radius: 10px;
+  background: linear-gradient(to top left, var(--secondary-color) 50%,  transparent 60%);
+}
+.work__image .border-top{
+  height: 5px;
+  width: 0;
+  top: 0;
+  right: 0;
+
+  border-radius: 10px;
+  background: linear-gradient(to bottom left, var(--secondary-color) 50%,  transparent 60%);
+}
+.work__image:hover .border-left,
+.work__image:hover .border-right{
+  height: 100%;
+}
+.work__image:hover .border-bottom,
+.work__image:hover .border-top{
+  width: 100%;
+}
+.work__image:hover img{
+  transition-duration: .5s;
+  opacity: 1;
+}
+/* END IMAGE EFECT */
+
+
+.work__text-item{
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+/* WORkS BTN */
+.works__btn{
+  margin-top: 5rem;
+  align-self: center;
+  width: 15rem;
+  position: relative;
+
+  text-transform: uppercase;
+  
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  border: none;
+  transition: all 0.7s ease;
+}
+.works__btn:hover {
+  background: transparent;
+  color: var(--secondary-color);
+}
+.works__btn:hover:before,
+.works__btn:hover:after {
+  transition: all 0.7s ease;
+  width: 100%;
+}
+.works__btn:before,
+.works__btn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 0px;
+  height: 3px;
+  background: var(--secondary-color);
+  transition: all 0.4s ease;
+}
+.works__btn:after {
+  top: inherit;
+  left: inherit;
+  bottom: 0;
+  right: 0;
+}
+
 
 /* FOOTER */
 
